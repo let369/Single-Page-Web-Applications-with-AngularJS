@@ -5,7 +5,7 @@
 	.controller('AlreadyBoughtController',AlreadyBoughtController)
 	.service('ShoppingListCheckOffService',ShoppingListCheckOffService);
 
-	var list1 = [{name: 'bread', quantity: 2},{name: 'milk', quantity: 1},{name: 'beer', quantity: 6}];
+	var list1 = [{name: 'bread', quantity: 2},{name: 'milk', quantity: 1},{name: 'beer', quantity: 6},{name: 'cheese', quantity: 10},{name: 'coffee', quantity: 2}];
 	var list2 = [];
 
 	ToBuyController.$inject = ['ShoppingListCheckOffService'];
