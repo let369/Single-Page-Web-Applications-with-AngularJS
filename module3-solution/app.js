@@ -9,7 +9,7 @@
 		var ddo = {
 		    templateUrl: 'founditemslist.html',
 		    scope: {
-		      founditems: '<',
+		      founditems:'<',
 		      onRemove: '&'
 		    },
 		    controller: NarrowItDownController,
@@ -34,6 +34,10 @@
 				}
 				console.log(con.found);
 			});
+		};
+
+		con.remove = function(index){
+			console.log("Aurio");
 		};
 	}
 
