@@ -1,5 +1,5 @@
 (function () {
-	'use script';
+	'use strict';
 	angular.module('ShopingListCheckOff',[])
 	.controller('ToBuyController',ToBuyController)
 	.controller('AlreadyBoughtController',AlreadyBoughtController)
