@@ -12,11 +12,14 @@
 		      founditems:'<',
 		      onRemove: '&'
 		    },
-		    controller: NarrowItDownController,
+		    controller: ShoppingListDirectiveController,
 		    controllerAs: 'list',
 		    bindToController: true
 	  	};
 	  	return ddo;
+	}
+	function ShoppingListDirectiveController() {
+		
 	}
 
 	NarrowItDownController.$inject = ["MenuSearchService"];
