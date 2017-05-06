@@ -32,12 +32,11 @@
 				if(con.searchTerm == "" || con.found.length == 0){
 					con.found = "No results";
 				}
-				console.log(con.found);
 			});
 		};
 
 		con.remove = function(index){
-			console.log("Aurio");
+			con.found.splice(index,1);
 		};
 	}
 
