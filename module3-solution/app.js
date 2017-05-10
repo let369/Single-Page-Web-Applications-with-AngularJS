@@ -7,11 +7,9 @@
 
 	function foundItemsDirective(){
 		var ddo = {
-			//restrict: 'E',
-		    //templateUrl:'loader/itemsloaderindicator.template.html',
-		    templateUrl:'founditemslist.template.html',
+		    templateUrl:'foundItems.html',
 		    scope: {
-		      itemsfound:'<',
+		      items:'<',
 		      onRemove: '&'
 		    },
 		    controller: ShoppingListDirectiveController,
@@ -30,7 +28,7 @@
 		var con = this;
 		con.searchTerm = "";
 		con.found = [];
-		
+
 		con.narrow = function(){
 			con.found = [];
 			MenuSearchService.getMatchedMenuItems(con.searchTerm)
