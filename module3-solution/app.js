@@ -7,9 +7,9 @@
 
 	function foundItemsDirective(){
 		var ddo = {
-			restrict: 'E',
+			//restrict: 'E',
 		    //templateUrl:'loader/itemsloaderindicator.template.html',
-		    templateUrl:'founditems.template.html',
+		    templateUrl:'founditemslist.template.html',
 		    scope: {
 		      itemsfound:'<',
 		      onRemove: '&'
@@ -29,6 +29,7 @@
 	function NarrowItDownController(MenuSearchService){
 		var con = this;
 		con.searchTerm = "";
+		con.found = [];
 		
 		con.narrow = function(){
 			con.found = [];
