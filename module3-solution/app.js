@@ -7,7 +7,9 @@
 
 	function foundItemsDirective(){
 		var ddo = {
-		    templateUrl: 'founditemslist.html',
+			restrict: 'E',
+		    //templateUrl:'loader/itemsloaderindicator.template.html',
+		    templateUrl:'founditems.template.html',
 		    scope: {
 		      founditems:'<',
 		      onRemove: '&'
@@ -18,6 +20,7 @@
 	  	};
 	  	return ddo;
 	}
+
 	function ShoppingListDirectiveController() {
 		
 	}
@@ -35,6 +38,7 @@
 				if(con.searchTerm == "" || con.found.length == 0){
 					con.found = "No results";
 				}
+				console.log(con.found);
 			});
 		};
 
