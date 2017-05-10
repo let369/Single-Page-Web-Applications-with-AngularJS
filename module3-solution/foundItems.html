@@ -1,8 +1,8 @@
-<!-- <span ng-if='list.itemsfound == "No results"'>
+<span ng-if='list.items == "No results"'>
 	{{list.itemsfound}}
-</span> -->
-<ol >
-   	<li ng-repeat="item in list.itemsfound">
+</span>
+<ol ng-if='list.items == "No results"'>
+   	<li ng-repeat="item in list.items">
 	    Name: {{ item.name }} </br>
         Short-name: {{ item.short_name }}</br> 
         Description: {{ item.description }}

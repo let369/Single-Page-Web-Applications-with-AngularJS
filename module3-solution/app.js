@@ -20,7 +20,7 @@
 	}
 
 	function ShoppingListDirectiveController() {
-		
+
 	}
 
 	NarrowItDownController.$inject = ["MenuSearchService"];
