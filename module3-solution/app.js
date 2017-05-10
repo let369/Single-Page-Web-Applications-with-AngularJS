@@ -11,7 +11,7 @@
 		    //templateUrl:'loader/itemsloaderindicator.template.html',
 		    templateUrl:'founditems.template.html',
 		    scope: {
-		      founditems:'<',
+		      itemsfound:'<',
 		      onRemove: '&'
 		    },
 		    controller: ShoppingListDirectiveController,
