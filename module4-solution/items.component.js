@@ -4,9 +4,8 @@
 	angular.module('MenuApp')
 	.component('items',{
 		templateUrl: 'items.html',
-	  	controller: itemsController,
 	  	bindings: {
-		    items: '<'
+		    itemsList: '<'
 		}
 	})
 })();
