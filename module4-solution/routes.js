@@ -23,6 +23,19 @@
 					return MenuDataService.getAllCategories();
 				}]
 			}
+		})
+		.state('items',{
+			url:'/items/{short_name}',
+			templateUrl:'categorieitems.template.html',
+			controller:'CategItemsController as itemcontroller',
+			resolve:{
+				short_name:['$stateParams',function($stateParams){
+					return $stateParams.short_name;
+				}],
+				itemsList:['$stateParams','MenuDataService',function($stateParams,MenuDataService){
+					return MenuDataService.getItemsForCategory($stateParams.short_name);
+				}]
+			}
 		});
 	}
 })();

@@ -8,6 +8,5 @@
 	function MenuAppController(categoriesList){
 		var mainList = this;
   		mainList.categoriesList = categoriesList;
-  		console.log("Hey ",mainList.categoriesList)
 	}
 })();
