@@ -1,23 +1,23 @@
 <fieldset ng-controller="RegistrationController as reg">
 	<legend>Registration</legend>
 	<form name='regForm' novalidate>
-		<input type="text" name="First Name" placeholder="First Name" ng-model="reg.user.firstname" required minlength="4" ng-maxlength="10">
+		<input type="text" name="firstname" placeholder="First Name" ng-model="reg.user.firstname" required minlength="4" ng-maxlength="10">
 		<span
-            ng-if="(regForm.username.$error.minlength || regForm.username.$error.required) && regForm.username.$touched">
+            ng-if="(regForm.firstname.$error.minlength || regForm.firstname.$error.required) && regForm.firstname.$touched">
             Username must be at least 4 characters long
         </span>
-        <span ng-if="regForm.username.$error.maxlength && regForm.username.$touched">
+        <span ng-if="regForm.firstname.$error.maxlength && regForm.firstname.$touched">
             Username must not be longer than 10 characters
         </span>
 		<br>
-		<input type="text" name="Last Name" placeholder="Last Name" ng-model="reg.user.lastname" required>
+		<input type="text" name="lastname" placeholder="Last Name" ng-model="reg.user.lastname" required>
 		<br>
-		<input type="email" name="Email" placeholder="Email" ng-model="reg.user.email" required>
+		<input type="email" name="email" placeholder="Email" ng-model="reg.user.email" required>
 		<span ng-if="regForm.email.$invalid && regForm.email.$touched">
             Must be a valid email address: handle@domain format
         </span>
 		<br>
-		<input type="text" name="Phone" placeholder="Phone" ng-model="reg.user.phone" required pattern="(\d{3})-(\d{3})-(\d{4})">
+		<input type="text" name="phone" placeholder="Phone" ng-model="reg.user.phone" required pattern="(\d{3})-(\d{3})-(\d{4})">
 		<span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
             Phone must be in the format ###-###-####.
         </span>
