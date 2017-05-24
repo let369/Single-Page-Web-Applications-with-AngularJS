@@ -1,7 +1,7 @@
 <div class="container">
   <fieldset ng-controller="RegistrationController as reg">
-    <legend> Registration </legend>
-    <form name='regForm' novalidate>
+    <legend style="color:white"> Registration </legend>
+    <form name='regForm' novalidate style="color:black">
         <input type="text" name="firstname" placeholder="Firstname" ng-model="reg.user.firstname" required>
             {{ reg.user.firstname }}
             <span ng-if="regForm.firstname.$error.required && regForm.firstname.$touched">
