@@ -31,9 +31,9 @@
         </div>
 	</form>
 </fieldset> -->
-<fieldset>
+<fieldset ng-controller="RegistrationController as reg">
       <legend>Registration</legend>
-      <form name='regForm' novalidate style="color:black">
+      <form name='regForm' novalidate>
 
         <input type="text" name="username" placeholder="Pick a username"
           ng-model="reg.user.username"
