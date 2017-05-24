@@ -1,8 +1,8 @@
 (function (){
 	'use strict';
-	angular.module('FormValidation',[]);
+	angular.module('public',[]);
 
-	angular.module('FormValidation')
+	angular.module('public')
 	.controller('RegistrationController', RegistrationController);
 
 	function RegistrationController() {
