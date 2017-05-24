@@ -1,6 +1,5 @@
 (function (){
 	'use strict';
-	angular.module('public',[]);
 
 	angular.module('public')
 	.controller('RegistrationController', RegistrationController);

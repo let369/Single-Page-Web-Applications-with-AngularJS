@@ -43,7 +43,7 @@ function routeConfig ($stateProvider) {
     })
     .state('public.form',{
       url:'/form',
-      templateUrl:'src/public/form/form.html'
+      templateUrl:'src/public/form.html'
     });
 }
 })();
