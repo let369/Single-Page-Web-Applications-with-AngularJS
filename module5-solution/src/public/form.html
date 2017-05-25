@@ -28,10 +28,10 @@
             </span>
             <br>
 
-          <input type="text" name="itemname" placeholder="Your favorite dish number" ng-model="reg.user.phone">
+          <input type="text" name="itemname" placeholder="Your favorite dish number" ng-model="reg.user.itemname">
           <br>
 
-          <button ng-disabled="regForm.$invalid" ng-click="reg.submit()">
+          <button ng-disabled="regForm.$invalid" ng-click="reg.submit(reg.user.itemname)">
             Submit
           </button>
     </form>
