@@ -10,12 +10,11 @@
 	  var reg = this;
 
 	  reg.submit = function (itemshortname) {
+	  	$rootScope.itemshortname = itemshortname;
 	  	return $http({method: "GET",url: ("https://let369-module5.herokuapp.com/menu_items/"+ itemshortname +".json")})
 		.then(function (response) {
-			$rootScope.itemshortname = itemshortname;
 			reg.message = "Your information has been saved."
 			reg.completed = true;
-			//return response.data.menu_items;
   		},function(response){
   			reg.message = "No such menu number exists."
   			reg.completed = false;
