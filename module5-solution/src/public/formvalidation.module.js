@@ -12,7 +12,7 @@
 	  reg.submit = function (itemshortname) {
 	  	return $http({method: "GET",url: ("https://let369-module5.herokuapp.com/menu_items/"+ itemshortname +".json")})
 		.then(function (response) {
-			$rootscope.itemshortname = itemshortname;
+			$rootScope.itemshortname = itemshortname;
 			reg.message = "Your information has been saved."
 			reg.completed = true;
 			//return response.data.menu_items;
