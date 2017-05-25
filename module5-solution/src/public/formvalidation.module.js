@@ -4,9 +4,9 @@
 	angular.module('public')
 	.controller('RegistrationController', RegistrationController);
 
-	RegistrationController.$inject = ['$http']; 
+	RegistrationController.$inject = ['$rootScope','$http']; 
 
-	function RegistrationController($http) {
+	function RegistrationController($rootScope,$http) {
 	  var reg = this;
 
 	  reg.submit = function (itemshortname) {
