@@ -27,11 +27,13 @@
             <br>
 
           <input type="text" name="itemname" placeholder="Your favorite dish number" ng-model="reg.user.itemname">
+          <span ng-if="reg.completed">{{reg.message}}</span>
           <br>
 
           <button ng-disabled="regForm.$invalid" ng-click="reg.submit(reg.user.itemname)">
             Submit
           </button>
+          <span ng-if="!reg.completed">{{reg.message}}</span>
     </form>
   </fieldset>
 </div>
