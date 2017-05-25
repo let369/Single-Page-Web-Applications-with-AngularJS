@@ -43,9 +43,7 @@ function routeConfig ($stateProvider) {
     })
     .state('public.form',{
       url:'/form',
-      templateUrl:'src/public/form.html',
-      controller: 'FormController',
-      controllerAs: 'formctrl'
+      templateUrl:'src/public/form.html'
     });
 }
 })();
