@@ -44,6 +44,10 @@ function routeConfig ($stateProvider) {
     .state('public.form',{
       url:'/form',
       templateUrl:'src/public/form.html'
+    })
+    .state('public.info',{
+      url:'/info',
+      templateUrl:'src/public/info.html',
     });
 }
 })();

@@ -4,13 +4,13 @@
     <form name='regForm' novalidate style="color:black">
         <input type="text" name="firstname" placeholder="Firstname" ng-model="reg.user.firstname" required>
             <span style="color:red" ng-if="regForm.firstname.$error.required && regForm.firstname.$touched">
-              Firstname must be at least 4 characters long
+              Firstname is required.
             </span>
             <br>
 
           <input type="text" name="lastname" placeholder="Lastname" ng-model="reg.user.lastname" required>
             <span style="color:red" ng-if="regForm.lastname.$error.required && regForm.lastname.$touched">
-              Lastname must be at least 4 characters long
+              Lastname is required.
             </span>
             <br>
 
@@ -27,14 +27,14 @@
             <br>
 
           <input type="text" name="itemname" placeholder="Your favorite dish number" ng-model="reg.user.itemname">
-          <span style="color:red" ng-if="!reg.completed">{{reg.message}}</span>
+          <span style="color:red" ng-if="!reg.registered">{{reg.message}}</span>
           <br>
 
-          <button ng-disabled="regForm.$invalid" ng-click="reg.submit(reg.user.itemname)">
+          <button ng-disabled="regForm.$invalid" ng-click="reg.submit(reg.user.firstname, reg.user.lastname, reg.user.email, reg.user.phone, reg.user.itemname)">
             Submit
           </button>
           </br>
-          <span style="color:green" ng-if="reg.completed">{{reg.message}}</span>
+          <span style="color:green" ng-if="reg.registered">{{reg.message}}</span>
     </form>
   </fieldset>
 </div>
